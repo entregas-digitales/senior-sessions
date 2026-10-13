@@ -2,80 +2,196 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Special Offer · The 52-Week Session Blueprint™</title>
+<title>Special Offer — The Session Blueprint™</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f9f8f4;--bg2:#ffffff;--navy:#1e3a5f;--amber:#d97706;--amber-hover:#b45309;--text:#1c1c1c;--muted:#6b7280;--border:#e2e8f0;--green:#16a34a;--red:#dc2626}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.65}
-.trust-bar{background:var(--navy);color:#fff;text-align:center;padding:10px 16px;font-size:13px;letter-spacing:.02em}
-.wrap{max-width:680px;margin:0 auto;padding:0 16px}
-.hero{padding:40px 0 28px;text-align:center}
-.hero h1{font-size:clamp(22px,5vw,34px);font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:14px}
-.hero p{font-size:clamp(15px,2.5vw,18px);color:#374151;max-width:580px;margin:0 auto}
-.audio-block{background:var(--bg2);border:2px solid var(--border);border-radius:14px;padding:24px;margin:28px 0;display:flex;flex-direction:column;align-items:center;gap:16px}
-.avatar-img{width:120px;height:180px;object-fit:cover;border-radius:10px;border:2px solid var(--border)}
-.audio-label{font-size:14px;color:var(--muted);text-align:center}
-audio{width:100%;max-width:480px}
-.stack-box{background:var(--bg2);border:2px dashed var(--amber);border-radius:14px;padding:24px;margin:24px 0}
-.stack-box h2{font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px}
-.stack-item{display:flex;gap:10px;margin-bottom:10px;font-size:15px}
-.stack-item .icon{color:var(--green);font-weight:700;flex-shrink:0}
-.value-line{text-align:center;font-size:14px;color:var(--muted);margin:12px 0 4px}
-.value-total{text-align:center;font-size:16px;font-weight:700;color:var(--text);text-decoration:line-through;margin-bottom:4px}
-.offer-box{text-align:center;background:var(--bg2);border-radius:14px;padding:28px 20px;margin:24px 0;border:2px solid var(--border)}
-.offer-label{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--amber);font-weight:700;margin-bottom:6px}
-.price{font-size:clamp(44px,10vw,64px);font-weight:900;color:var(--navy);line-height:1}
-.price-note{font-size:14px;color:var(--muted);margin:6px 0 20px}
-.btn-yes{display:block;background:var(--amber);color:#fff;text-decoration:none;font-size:clamp(16px,3vw,19px);font-weight:800;padding:18px 24px;border-radius:10px;text-align:center;line-height:1.3;margin:0 auto;max-width:480px;transition:background .15s}
-.btn-yes:hover{background:var(--amber-hover)}
-.guarantee{text-align:center;font-size:13px;color:var(--muted);margin:14px 0 0}
-.urgency{text-align:center;font-size:15px;font-weight:700;color:var(--red);margin:20px 0 8px}
-.btn-no{display:block;text-align:center;font-size:13px;color:var(--muted);text-decoration:underline;cursor:pointer;margin:20px auto 40px;max-width:480px}
-.btn-no:hover{color:var(--text)}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#16233B;--green:#1FA35A;--green-dark:#178048;--yellow:#FFC93C;--yellow-dark:#E6A800;--red:#E8395B;--bg:#F6F7F9;--white:#fff;--ink:#20242C;--ink-soft:#6B7280}
+html,body{background:var(--bg);font-family:'Nunito',sans-serif;color:var(--ink)}
+a{text-decoration:none}
+.wrap{max-width:580px;margin:0 auto;padding:0 18px}
+
+/* TOP BAR */
+.top-bar{background:var(--navy);color:#fff;text-align:center;padding:10px 16px;font-size:13px;font-weight:700;letter-spacing:.3px}
+
+/* HEADER */
+.oto-header{background:var(--navy);padding:22px 18px 18px;text-align:center;color:#fff}
+.oto-header .eyebrow{display:inline-block;background:rgba(255,201,60,.18);color:var(--yellow);font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:5px 14px;border-radius:999px;margin-bottom:12px}
+.oto-header h1{font-family:'Baloo 2',sans-serif;font-size:22px;line-height:1.25;color:#fff;font-weight:800;max-width:520px;margin:0 auto 10px}
+.oto-header h2{font-size:14.5px;color:rgba(255,255,255,.75);font-weight:600;max-width:480px;margin:0 auto;line-height:1.5}
+
+/* VIDEO BLOCK */
+.video-wrap{background:var(--navy);padding:0 18px 24px}
+.video-box{max-width:580px;margin:0 auto;background:#000;border-radius:12px;overflow:hidden;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:2px solid rgba(255,255,255,.1)}
+.video-placeholder{text-align:center;color:rgba(255,255,255,.6);padding:20px}
+.video-placeholder .play-icon{font-size:48px;margin-bottom:8px}
+.video-placeholder p{font-size:14px}
+.video-instruction{text-align:center;color:rgba(255,255,255,.8);font-size:14px;font-weight:700;padding:14px 0 0}
+
+/* TIMER */
+.timer-bar{background:#1a1a2e;padding:14px 18px;text-align:center;color:var(--yellow);font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800}
+
+/* CTA SECTION */
+.cta-section{background:var(--white);padding:28px 18px}
+.cta-section .price-row{text-align:center;margin-bottom:22px}
+.cta-section .price-old{font-size:14px;color:var(--ink-soft);text-decoration:line-through;margin-bottom:4px}
+.cta-section .price-now{font-family:'Baloo 2',sans-serif;font-size:42px;font-weight:800;color:var(--navy);line-height:1}
+.cta-section .price-note{font-size:12px;color:var(--ink-soft);margin-top:4px}
+.btn-yes{display:block;background:var(--green);color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px;text-align:center;padding:18px 20px;border-radius:12px;border:none;cursor:pointer;width:100%;text-decoration:none;margin-bottom:10px;line-height:1.3}
+.btn-yes:hover{background:var(--green-dark)}
+.btn-no{display:block;background:#e5e7eb;color:#6B7280;font-size:13.5px;font-weight:700;text-align:center;padding:12px 20px;border-radius:10px;cursor:pointer;width:100%;text-decoration:none}
+.btn-no:hover{background:#d1d5db}
+.trust-row{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:18px;font-size:11.5px;color:var(--ink-soft);font-weight:700}
+.trust-row span{display:flex;align-items:center;gap:4px}
+
+/* STACK */
+.stack-section{background:var(--bg);padding:28px 18px}
+.stack-section h3{font-family:'Baloo 2',sans-serif;font-size:20px;color:var(--navy);text-align:center;margin-bottom:20px;font-weight:800}
+.stack-item{display:flex;gap:12px;align-items:flex-start;background:var(--white);border-radius:12px;padding:14px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.stack-item .icon{font-size:20px;flex:none;margin-top:2px}
+.stack-item .text{flex:1}
+.stack-item .text strong{font-size:14.5px;color:var(--navy);display:block;margin-bottom:2px}
+.stack-item .text span{font-size:12.5px;color:var(--ink-soft);line-height:1.4}
+.value-tag{font-size:11px;font-weight:800;color:var(--green-dark);background:#EAF8EF;padding:2px 8px;border-radius:999px;margin-left:8px}
+.total-row{background:var(--yellow);border-radius:10px;padding:14px;text-align:center;margin-top:16px;font-weight:800;font-size:15px;color:var(--navy)}
+
+/* GUARANTEE */
+.guarantee{background:var(--white);padding:22px 18px;text-align:center;border-top:1px solid #E7E9EE}
+.guarantee .g-box{border:2px solid var(--green);border-radius:14px;padding:18px;max-width:420px;margin:0 auto}
+.guarantee .g-icon{font-size:32px;margin-bottom:8px}
+.guarantee h4{font-family:'Baloo 2',sans-serif;font-size:17px;color:var(--navy);margin-bottom:6px}
+.guarantee p{font-size:13px;color:var(--ink-soft);line-height:1.5}
+
+/* BOTTOM CTA */
+.bottom-cta{background:var(--navy);padding:28px 18px}
+
+@media(max-width:520px){
+.oto-header h1{font-size:19px}
+.cta-section .price-now{font-size:36px}
+.btn-yes{font-size:15px;padding:16px}
+}
 </style>
 </head>
 <body>
-<div class="trust-bar">🔒 Secure checkout &nbsp;|&nbsp; 7-Day Money-Back Guarantee &nbsp;|&nbsp; Instant Access</div>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>You Have 1,395 Activities.<br>You're Still Building Every Session From Scratch.</h1>
-    <p>The 52-Week Session Blueprint turns your Vault into 156 ready-to-run sessions — so planning takes 3 minutes, not 2 hours.</p>
+<div class="top-bar">⚡ This offer appears ONCE — it will not be available after this page</div>
+
+<div class="oto-header">
+  <div class="wrap">
+    <div class="eyebrow">🎁 Special One-Time Offer</div>
+    <h1>WAIT — Your Order Isn't Complete Yet. Watch This Before You Close The Tab.</h1>
+    <h2>Most activity professionals still spend 30–45 minutes planning each session — even after buying a library like this. This page explains why.</h2>
   </div>
-
-  <div class="audio-block">
-    <img src="../avatars/oto1.png" alt="Message from your instructor" class="avatar-img">
-    <p class="audio-label">▶ Listen to this short message (plays automatically when ready)</p>
-    <audio controls preload="auto" src="../audios/oto1.mp3">
-      Your browser doesn't support audio. Please use Chrome or Safari.
-    </audio>
-  </div>
-
-  <div class="stack-box">
-    <h2>Everything included in The 52-Week Session Blueprint™:</h2>
-    <div class="stack-item"><span class="icon">✓</span><span><strong>52 complete weekly sessions × 3 levels</strong> — 156 ready-to-run sessions built entirely from your Vault (beginner, intermediate, advanced) · Value $197</span></div>
-    <div class="stack-item"><span class="icon">✓</span><span><strong>Rapid Adaptation System</strong> — adapt any session to any mobility level in under 5 minutes · Value $47</span></div>
-    <div class="stack-item"><span class="icon">✓</span><span><strong>Emergency 15-Minute Kit</strong> — 17 complete mini-sessions for when you have zero prep time · Value $27</span></div>
-    <div class="stack-item"><span class="icon">✓</span><span><strong>BONUS: The First 30-Day Quick-Start Roadmap</strong> — the exact sequence for your first month using the Vault + Blueprint together · Value $37</span></div>
-  </div>
-
-  <p class="value-line">Total value:</p>
-  <p class="value-total">$308+</p>
-
-  <div class="offer-box">
-    <p class="offer-label">One-time offer · This page only</p>
-    <p class="price">$37</p>
-    <p class="price-note">One-time payment · No subscription · Instant access</p>
-    <a href="WHOP_OTO1_URL" class="btn-yes">Add The Blueprint — Start Planning in 3 Minutes →</a>
-    <p class="guarantee">✓ 7-day money-back guarantee. No questions asked.</p>
-  </div>
-
-  <p class="urgency">This offer disappears when you leave this page.</p>
-
-  <a href="../ds1/" class="btn-no">No thanks, I'll keep building my sessions from scratch</a>
 </div>
+
+<div class="video-wrap">
+  <div class="wrap">
+    <div class="video-instruction">👇 Watch the full video before scrolling 👇</div>
+    <div class="video-box" style="margin-top:12px">
+      <!-- VIDEO EMBED GOES HERE -->
+      <div class="video-placeholder">
+        <div class="play-icon">▶️</div>
+        <p>Video coming soon</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="timer-bar">⏰ Offer Reserved Only For: <span id="timer">10:00</span></div>
+
+<div class="cta-section">
+  <div class="wrap">
+    <div class="price-row">
+      <div class="price-old">Valued at $228</div>
+      <div class="price-now">$47</div>
+      <div class="price-note">One-time payment · Instant access · 7-day guarantee</div>
+    </div>
+    <a href="/checkout-oto1" class="btn-yes">✅ YES — Add The Session Blueprint And Run My First Structured Session Today</a>
+    <a href="/oto2" class="btn-no">No thanks — I'll keep planning my sessions from scratch each morning</a>
+    <div class="trust-row">
+      <span>🔒 Secure payment</span>
+      <span>🛡️ 7-day guarantee</span>
+      <span>⚡ Instant access</span>
+      <span>✓ One-time payment</span>
+    </div>
+  </div>
+</div>
+
+<div class="stack-section">
+  <div class="wrap">
+    <h3>Everything inside The Session Blueprint™</h3>
+    <div class="stack-item">
+      <div class="icon">📋</div>
+      <div class="text">
+        <strong>20 Complete Session Templates <span class="value-tag">$100 value</span></strong>
+        <span>One for each major patient profile — opening, main activity, transitions, closing, and documentation pre-mapped. No decisions in the moment.</span>
+      </div>
+    </div>
+    <div class="stack-item">
+      <div class="icon">📅</div>
+      <div class="text">
+        <strong>First 30 Days Guide <span class="value-tag">$47 value</span></strong>
+        <span>Day-by-day plan for your first four weeks — exactly which template to use and which volume to open.</span>
+      </div>
+    </div>
+    <div class="stack-item">
+      <div class="icon">📝</div>
+      <div class="text">
+        <strong>Session Documentation Forms <span class="value-tag">$37 value</span></strong>
+        <span>Printable and editable forms that take under 3 minutes to complete. Capture what happened, what changed, what to carry forward.</span>
+      </div>
+    </div>
+    <div class="stack-item">
+      <div class="icon">🃏</div>
+      <div class="text">
+        <strong>Patient Profile Quick-Reference Cards <span class="value-tag">$27 value</span></strong>
+        <span>One card per patient profile type. Everything you'd normally keep in your head, at your fingertips.</span>
+      </div>
+    </div>
+    <div class="stack-item" style="border:2px solid var(--green-dark);background:#EAF8EF">
+      <div class="icon">🎁</div>
+      <div class="text">
+        <strong>BONUS: Monthly Session Planning Poster <span class="value-tag">$17 value</span></strong>
+        <span>Printable visual calendar — put it on your wall and see every week's sessions at a glance. For the first buyers only.</span>
+      </div>
+    </div>
+    <div class="total-row">🎁 Total value: $228 — Yours today for just $47</div>
+  </div>
+</div>
+
+<div class="guarantee">
+  <div class="wrap">
+    <div class="g-box">
+      <div class="g-icon">🛡️</div>
+      <h4>7-Day Money-Back Guarantee</h4>
+      <p>If The Session Blueprint doesn't change the way you run sessions within 7 days, contact us and we'll refund every dollar. No questions asked.</p>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-cta">
+  <div class="wrap">
+    <a href="/checkout-oto1" class="btn-yes" style="max-width:520px;margin:0 auto;display:block">✅ YES — Add The Session Blueprint For Just $47</a>
+    <div style="margin-top:14px">
+      <a href="/oto2" class="btn-no" style="max-width:520px;margin:0 auto;display:block;background:rgba(255,255,255,.08);color:rgba(255,255,255,.5)">No thanks — I'll keep planning my sessions from scratch</a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var t=10*60,el=document.getElementById('timer');
+  try{var s=parseInt(sessionStorage.getItem('oto1t')||t);t=s;}catch(e){}
+  var iv=setInterval(function(){
+    t--;
+    try{sessionStorage.setItem('oto1t',t);}catch(e){}
+    if(t<=0){clearInterval(iv);el.textContent='0:00';return;}
+    el.textContent=Math.floor(t/60)+':'+(t%60<10?'0':'')+t%60;
+  },1000);
+  el.textContent=Math.floor(t/60)+':'+(t%60<10?'0':'')+t%60;
+})();
+</script>
 </body>
 </html>

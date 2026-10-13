@@ -2,80 +2,147 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Special Offer · The Specialist Populations Expansion Pack™</title>
+<title>Special Offer — The Annual Session Calendar™</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f9f8f4;--bg2:#ffffff;--navy:#1e3a5f;--amber:#d97706;--amber-hover:#b45309;--text:#1c1c1c;--muted:#6b7280;--border:#e2e8f0;--green:#16a34a;--red:#dc2626}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,sans-serif;font-size:17px;line-height:1.65}
-.trust-bar{background:var(--navy);color:#fff;text-align:center;padding:10px 16px;font-size:13px}
-.wrap{max-width:680px;margin:0 auto;padding:0 16px}
-.hero{padding:40px 0 28px;text-align:center}
-.hero h1{font-size:clamp(22px,5vw,34px);font-weight:800;color:var(--navy);line-height:1.2;margin-bottom:14px}
-.hero p{font-size:clamp(15px,2.5vw,18px);color:#374151;max-width:580px;margin:0 auto}
-.audio-block{background:var(--bg2);border:2px solid var(--border);border-radius:14px;padding:24px;margin:28px 0;display:flex;flex-direction:column;align-items:center;gap:16px}
-.avatar-img{width:120px;height:180px;object-fit:cover;border-radius:10px;border:2px solid var(--border)}
-.audio-label{font-size:14px;color:var(--muted);text-align:center}
-audio{width:100%;max-width:480px}
-.stack-box{background:var(--bg2);border:2px dashed var(--amber);border-radius:14px;padding:24px;margin:24px 0}
-.stack-box h2{font-size:18px;font-weight:700;color:var(--navy);margin-bottom:16px}
-.stack-item{display:flex;gap:10px;margin-bottom:10px;font-size:15px}
-.stack-item .icon{color:var(--green);font-weight:700;flex-shrink:0}
-.value-line{text-align:center;font-size:14px;color:var(--muted);margin:12px 0 4px}
-.value-total{text-align:center;font-size:16px;font-weight:700;color:var(--text);text-decoration:line-through;margin-bottom:4px}
-.offer-box{text-align:center;background:var(--bg2);border-radius:14px;padding:28px 20px;margin:24px 0;border:2px solid var(--border)}
-.offer-label{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--amber);font-weight:700;margin-bottom:6px}
-.price{font-size:clamp(44px,10vw,64px);font-weight:900;color:var(--navy);line-height:1}
-.price-note{font-size:14px;color:var(--muted);margin:6px 0 20px}
-.btn-yes{display:block;background:var(--amber);color:#fff;text-decoration:none;font-size:clamp(16px,3vw,19px);font-weight:800;padding:18px 24px;border-radius:10px;text-align:center;line-height:1.3;margin:0 auto;max-width:480px;transition:background .15s}
-.btn-yes:hover{background:var(--amber-hover)}
-.guarantee{text-align:center;font-size:13px;color:var(--muted);margin:14px 0 0}
-.urgency{text-align:center;font-size:15px;font-weight:700;color:var(--red);margin:20px 0 8px}
-.btn-no{display:block;text-align:center;font-size:13px;color:var(--muted);text-decoration:underline;cursor:pointer;margin:20px auto 40px;max-width:480px}
-.btn-no:hover{color:var(--text)}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#16233B;--green:#1FA35A;--green-dark:#178048;--yellow:#FFC93C;--red:#E8395B;--bg:#F6F7F9;--white:#fff;--ink:#20242C;--ink-soft:#6B7280}
+html,body{background:var(--bg);font-family:'Nunito',sans-serif;color:var(--ink)}
+.wrap{max-width:580px;margin:0 auto;padding:0 18px}
+.top-bar{background:var(--navy);color:#fff;text-align:center;padding:10px 16px;font-size:13px;font-weight:700}
+.oto-header{background:var(--navy);padding:22px 18px 18px;text-align:center;color:#fff}
+.oto-header .eyebrow{display:inline-block;background:rgba(255,201,60,.18);color:var(--yellow);font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:5px 14px;border-radius:999px;margin-bottom:12px}
+.oto-header h1{font-family:'Baloo 2',sans-serif;font-size:22px;line-height:1.25;color:#fff;font-weight:800;max-width:520px;margin:0 auto 10px}
+.oto-header h2{font-size:14.5px;color:rgba(255,255,255,.75);font-weight:600;max-width:480px;margin:0 auto;line-height:1.5}
+.video-wrap{background:var(--navy);padding:0 18px 24px}
+.video-box{max-width:580px;margin:0 auto;background:#000;border-radius:12px;overflow:hidden;aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;border:2px solid rgba(255,255,255,.1)}
+.video-placeholder{text-align:center;color:rgba(255,255,255,.6);padding:20px}
+.video-placeholder .play-icon{font-size:48px;margin-bottom:8px}
+.video-instruction{text-align:center;color:rgba(255,255,255,.8);font-size:14px;font-weight:700;padding:14px 0 0}
+.timer-bar{background:#1a1a2e;padding:14px 18px;text-align:center;color:var(--yellow);font-family:'Baloo 2',sans-serif;font-size:16px;font-weight:800}
+.cta-section{background:var(--white);padding:28px 18px}
+.price-row{text-align:center;margin-bottom:22px}
+.price-old{font-size:14px;color:var(--ink-soft);text-decoration:line-through;margin-bottom:4px}
+.price-now{font-family:'Baloo 2',sans-serif;font-size:42px;font-weight:800;color:var(--navy);line-height:1}
+.price-note{font-size:12px;color:var(--ink-soft);margin-top:4px}
+.btn-yes{display:block;background:var(--green);color:#fff;font-family:'Baloo 2',sans-serif;font-weight:800;font-size:17px;text-align:center;padding:18px 20px;border-radius:12px;width:100%;text-decoration:none;margin-bottom:10px;line-height:1.3}
+.btn-yes:hover{background:var(--green-dark)}
+.btn-no{display:block;background:#e5e7eb;color:#6B7280;font-size:13.5px;font-weight:700;text-align:center;padding:12px 20px;border-radius:10px;width:100%;text-decoration:none}
+.trust-row{display:flex;justify-content:center;gap:18px;flex-wrap:wrap;margin-top:18px;font-size:11.5px;color:var(--ink-soft);font-weight:700}
+.stack-section{background:var(--bg);padding:28px 18px}
+.stack-section h3{font-family:'Baloo 2',sans-serif;font-size:20px;color:var(--navy);text-align:center;margin-bottom:20px;font-weight:800}
+.stack-item{display:flex;gap:12px;align-items:flex-start;background:var(--white);border-radius:12px;padding:14px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.stack-item .icon{font-size:20px;flex:none;margin-top:2px}
+.stack-item .text strong{font-size:14.5px;color:var(--navy);display:block;margin-bottom:2px}
+.stack-item .text span{font-size:12.5px;color:var(--ink-soft);line-height:1.4}
+.value-tag{font-size:11px;font-weight:800;color:var(--green-dark);background:#EAF8EF;padding:2px 8px;border-radius:999px;margin-left:8px}
+.total-row{background:var(--yellow);border-radius:10px;padding:14px;text-align:center;margin-top:16px;font-weight:800;font-size:15px;color:var(--navy)}
+.guarantee{background:var(--white);padding:22px 18px;text-align:center;border-top:1px solid #E7E9EE}
+.g-box{border:2px solid var(--green);border-radius:14px;padding:18px;max-width:420px;margin:0 auto}
+.g-box .g-icon{font-size:32px;margin-bottom:8px}
+.g-box h4{font-family:'Baloo 2',sans-serif;font-size:17px;color:var(--navy);margin-bottom:6px}
+.g-box p{font-size:13px;color:var(--ink-soft);line-height:1.5}
+.bottom-cta{background:var(--navy);padding:28px 18px}
+@media(max-width:520px){.oto-header h1{font-size:19px}.price-now{font-size:36px}.btn-yes{font-size:15px;padding:16px}}
 </style>
 </head>
 <body>
-<div class="trust-bar">🔒 Secure checkout &nbsp;|&nbsp; 7-Day Money-Back Guarantee &nbsp;|&nbsp; Instant Access</div>
-
-<div class="wrap">
-  <div class="hero">
-    <h1>The Vault Works Beautifully.<br>Except for Your Most Challenging Patients.</h1>
-    <p>The Specialist Populations Expansion Pack fills the gap with 200+ adapted activities for dementia, Parkinson's, and post-stroke patients — the ones who need it most.</p>
+<div class="top-bar">⏳ One-time offer — this page won't appear again after you leave</div>
+<div class="oto-header">
+  <div class="wrap">
+    <div class="eyebrow">📅 Annual Planning System</div>
+    <h1>Two Down. This Is Where The Real Consistency Starts.</h1>
+    <h2>Having 650 activity pages doesn't tell you what to run in February versus October. This page solves that.</h2>
   </div>
-
-  <div class="audio-block">
-    <img src="../avatars/oto3.png" alt="Message from your instructor" class="avatar-img">
-    <p class="audio-label">▶ Listen to this short message</p>
-    <audio controls preload="auto" src="../audios/oto3.mp3">
-      Your browser doesn't support audio.
-    </audio>
-  </div>
-
-  <div class="stack-box">
-    <h2>Everything in The Specialist Populations Expansion Pack™:</h2>
-    <div class="stack-item"><span class="icon">✓</span><span><strong>200+ Activities for Dementia &amp; Alzheimer's</strong> — with communication frameworks and sensory engagement protocols · Value $97</span></div>
-    <div class="stack-item"><span class="icon">✓</span><span><strong>Parkinson's Tremor-Management Activity Sequences</strong> — rhythm-based protocols that work with the neurological reality of the condition · Value $67</span></div>
-    <div class="stack-item"><span class="icon">✓</span><span><strong>Post-Stroke Progressive Rehabilitation Protocols</strong> — phase-by-phase sequences with explicit guidance on the affected side · Value $67</span></div>
-    <div class="stack-item"><span class="icon">✓</span><span><strong>Behavioral Response Protocols</strong> — clear frameworks for refusal, agitation, and unexpected reactions mid-session · Value $47</span></div>
-    <div class="stack-item"><span class="icon">✓</span><span><strong>BONUS: Specialist Assessment Quick-Reference Cards</strong> — 12 compact cards covering key assessment markers by condition · Value $27</span></div>
-  </div>
-
-  <p class="value-line">Total value:</p>
-  <p class="value-total">$305+</p>
-
-  <div class="offer-box">
-    <p class="offer-label">One-time offer · Only available here</p>
-    <p class="price">$37</p>
-    <p class="price-note">One-time payment · No subscription · Instant access</p>
-    <a href="WHOP_OTO3_URL" class="btn-yes">Add The Specialist Expansion Pack — Cover Every Patient in My Caseload →</a>
-    <p class="guarantee">✓ 7-day money-back guarantee. No questions asked.</p>
-  </div>
-
-  <p class="urgency">Only available on this page.</p>
-
-  <a href="../ds3/" class="btn-no">No thanks, I'll keep improvising with my most challenging patients</a>
 </div>
+<div class="video-wrap">
+  <div class="wrap">
+    <div class="video-instruction">👇 Watch the full video before scrolling 👇</div>
+    <div class="video-box" style="margin-top:12px">
+      <div class="video-placeholder">
+        <div class="play-icon">▶️</div>
+        <p>Video coming soon</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="timer-bar">⏰ Offer Reserved Only For: <span id="timer">10:00</span></div>
+<div class="cta-section">
+  <div class="wrap">
+    <div class="price-row">
+      <div class="price-old">Valued at $198</div>
+      <div class="price-now">$37</div>
+      <div class="price-note">One-time payment · Instant access · 7-day guarantee</div>
+    </div>
+    <a href="/checkout-oto3" class="btn-yes">✅ YES — Give Me The 52-Week Session Calendar And Stop Planning From Scratch 🔁</a>
+    <a href="/ds3" class="btn-no">No thanks — I'll decide what to run each week as it comes</a>
+    <div class="trust-row">
+      <span>🔒 Secure payment</span><span>🛡️ 7-day guarantee</span><span>⚡ Instant access</span><span>✓ One-time payment</span>
+    </div>
+  </div>
+</div>
+<div class="stack-section">
+  <div class="wrap">
+    <h3>Everything inside The Annual Session Calendar™</h3>
+    <div class="stack-item">
+      <div class="icon">📅</div>
+      <div class="text">
+        <strong>52-Week Session Roadmap <span class="value-tag">$97 value</span></strong>
+        <span>Complete pre-planned session calendar for the full year — volume, activity type, intensity, and seasonal note mapped for every week.</span>
+      </div>
+    </div>
+    <div class="stack-item">
+      <div class="icon">🎄</div>
+      <div class="text">
+        <strong>Holiday & Seasonal Activity Bundle <span class="value-tag">$47 value</span></strong>
+        <span>Themed activities for holidays and seasons across the year — the sessions families remember and patients look forward to.</span>
+      </div>
+    </div>
+    <div class="stack-item">
+      <div class="icon">📊</div>
+      <div class="text">
+        <strong>Monthly Patient Progress Tracking Sheets <span class="value-tag">$27 value</span></strong>
+        <span>Document where each patient started and show measurable improvement by year-end. Builds trust with families and referral sources.</span>
+      </div>
+    </div>
+    <div class="stack-item">
+      <div class="icon">🔄</div>
+      <div class="text">
+        <strong>Mix & Match Formula <span class="value-tag">$27 value</span></strong>
+        <span>Adapt any week's scheduled activities to any session length — from 20 minutes to 90. The Calendar works regardless of your schedule.</span>
+      </div>
+    </div>
+    <div class="stack-item" style="border:2px solid var(--green-dark);background:#EAF8EF">
+      <div class="icon">🎁</div>
+      <div class="text">
+        <strong>BONUS: Q1 Printable Calendar (Jan–Mar) <span class="value-tag">Limited</span></strong>
+        <span>Print-ready visual calendar for the first quarter — put it on your wall and start Monday with a full plan. For first buyers only.</span>
+      </div>
+    </div>
+    <div class="total-row">🎁 Total value: $198 — Yours today for just $37</div>
+  </div>
+</div>
+<div class="guarantee">
+  <div class="wrap">
+    <div class="g-box">
+      <div class="g-icon">🛡️</div>
+      <h4>7-Day Money-Back Guarantee</h4>
+      <p>If The Annual Session Calendar doesn't eliminate your weekly planning decisions within 7 days, we'll refund every dollar.</p>
+    </div>
+  </div>
+</div>
+<div class="bottom-cta">
+  <div class="wrap">
+    <a href="/checkout-oto3" class="btn-yes" style="max-width:520px;margin:0 auto;display:block">✅ YES — Add The Annual Session Calendar For Just $37</a>
+    <div style="margin-top:14px">
+      <a href="/ds3" class="btn-no" style="max-width:520px;margin:0 auto;display:block;background:rgba(255,255,255,.08);color:rgba(255,255,255,.5)">No thanks — I'll plan week by week</a>
+    </div>
+  </div>
+</div>
+<script>
+(function(){var t=10*60,el=document.getElementById('timer');try{var s=parseInt(sessionStorage.getItem('oto3t')||t);t=s;}catch(e){}var iv=setInterval(function(){t--;try{sessionStorage.setItem('oto3t',t);}catch(e){}if(t<=0){clearInterval(iv);el.textContent='0:00';return;}el.textContent=Math.floor(t/60)+':'+(t%60<10?'0':'')+t%60;},1000);el.textContent=Math.floor(t/60)+':'+(t%60<10?'0':'')+t%60;})();
+</script>
 </body>
 </html>
